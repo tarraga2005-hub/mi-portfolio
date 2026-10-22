@@ -1,8 +1,16 @@
+---
+// Importas el componente que ya trae Astro integrado
+import { Image } from 'astro:assets'; 
+
+// Importas tu foto desde la carpeta assets
+import fotoCV from '../assets/fotoCV.jpeg'; 
+---
 
 <header class="flex justify-between items-center py-5 w-full max-w-[1120px] mx-auto px-4">
-    <img class="rounded-full w-12 h-12" src="" alt="Mi foto">
+    <!-- Lo usas exactamente igual que usarias un tag <img> normal -->
+    <Image class="rounded-full w-12 h-12 object-cover" src={fotoCV} alt="Mi foto" />
 
-    <nav class="flex flex-row flex-wrap justify-end gap-x-4 gap-y-2 sm:gap-x-10 opacity-80 ">
+    <nav class="flex flex-row flex-wrap justify-end gap-x-4 gap-y-2 sm:gap-x-10 opacity-80">
         <a href="#inicio">Inicio</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
