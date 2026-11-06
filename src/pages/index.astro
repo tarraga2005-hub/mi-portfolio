@@ -2,6 +2,9 @@
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import  Badge  from '../components/badge.astro';
+import Card from '../components/card.astro';
+import imgMurdoku from '../assets/imgMurdoku.png';
+import imgRestaurante from '../assets/imagenRestaurante.png';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -9,7 +12,7 @@ import  Badge  from '../components/badge.astro';
 
 <Layout title="Portfolio de Sergio Tárraga Aceves - Desarrollador web">
 	<main>
-		<section class="w-full  mx-auto lg:w-[740px] py-15" id="inicio">
+		<section class="w-full  mx-auto lg:w-[740px] py-5" id="inicio">
 			<h1 class="text-white text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-2">
 				Hola, soy Sergio Tárraga<div class="flex justify-center items-center"></div>
 			</h1>
@@ -49,10 +52,31 @@ Me enfoco en la creación de aplicaciones web funcionales combinando el Frontend
 				</li>
 				
 			</ul>
-
+		</section>
+		<section class="w-full  mx-auto lg:w-[740px] ">
 			<h2 id="proyectos" class="text-2xl font-semibold mb-6 flex gap-x-3 items-center mt-15">
 				Proyectos
 			</h2>
+			<section>
+				<div>
+					<Card 
+						title="Juego de murdoku"
+						description='Este es un juego de ´logica que mezcla el cluedo con un sudoku tardicional, en esta práctica trabaje la gestion
+						de eventos con javascript y el manejo del DOM (Las imagenes estan desactivadas ya que fue un regalo al que le he quitado las fotos)'
+						link="https://murdoku-regalo.vercel.app"
+						image={imgMurdoku}
+						tags={['Javascript', 'CSS', 'HTML']}
+					/>
+					<Card 
+						title="Enmaquetación de un restaurante"
+						description='Está práctica la realice en primero y consistía en crear una página web de un restaurante con 
+						Css y html'
+						link="https://tarraga2005-hub.github.io/Proyecto-restaurante/"
+						image={imgRestaurante}
+						tags={['CSS', 'HTML']}
+					/>
+				</div>
+			</section>
 		</section>
 	</main>
 </Layout>
