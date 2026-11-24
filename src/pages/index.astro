@@ -5,6 +5,7 @@ import  Badge  from '../components/badge.astro';
 import Card from '../components/card.astro';
 import imgMurdoku from '../assets/imgMurdoku.png';
 import imgRestaurante from '../assets/imagenRestaurante.png';
+import imgCuestionario from '../assets/imagenCuestionario.png';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -66,6 +67,14 @@ Me enfoco en la creación de aplicaciones web funcionales combinando el Frontend
 						link="https://murdoku-regalo.vercel.app"
 						image={imgMurdoku}
 						tags={['Javascript', 'CSS', 'HTML']}
+					/>
+					<Card 
+						title="Cuestionario de Java"
+						description= 'Aplicación de cuestionario interactivo desarrollada en Java bajo el patrón de arquitectura Modelo-Vista-Controlador (MVC), con gestión de preguntas,
+						respuestas y persistencia de datos mediante ficheros. Clica en el enlace para descargar la aplicación y ejecutarla en tu entorno local.'
+						link="https://github.com/tarraga2005-hub/Proyecto-cuestionario/releases/download/v1.0.0/Cuestionario.Java.Windows.zip"
+						image={imgCuestionario}
+						tags={['Java', 'JavaFX','CSS']}
 					/>
 					<Card 
 						title="Enmaquetación de un restaurante"
